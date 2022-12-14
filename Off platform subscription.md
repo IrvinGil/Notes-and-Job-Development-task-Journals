@@ -1,0 +1,1 @@
+To read context about off-platform subscription [here](https://utinternational.jira.com/wiki/spaces/SKB/pages/1691254785/Pitch+-+Adding+handling+for+Off-Platform+Subscription+charges).
