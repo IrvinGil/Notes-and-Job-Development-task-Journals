@@ -79,6 +79,9 @@ Logs from email_sender service when sqs event is received:
 aws --endpoint-url=http://localhost:4576 sqs receive-message --queue-url http://localhost:4576/queue/WLDevelop-EmailSender-ProcessSendEmail
 
 
+aws --endpoint-url=http://localhost:4576 sqs receive-message --queue-url http://localhost:4576/queue/WLDevelop-EmailSender-ProcessSendEmail max-number-of-messages 10
+
+
 ---
 ```JSON
 {

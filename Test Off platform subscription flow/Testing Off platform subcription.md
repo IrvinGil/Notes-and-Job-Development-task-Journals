@@ -4,9 +4,11 @@
 ## Prerequisite:
 - You can read on the context of what _off-platform_ on confluence [here](https://utinternational.jira.com/wiki/spaces/SKB/pages/1691254785/Pitch+-+Adding+handling+for+Off-Platform+Subscription+charges)
 - **Technical Req:**
-	1. **Master** branch of `Whitelabel-local-shared` | the original branch of overdraft changes is the `feature/add-batch-overdraft-processed-queue`.
+	1. **Master** branch of **`Whitelabel-local-shared`** | the original branch of overdraft changes is the `feature/add-batch-overdraft-processed-queue`.
 	2. God branch of off platform subscription on **whitelabel-mainapp** (`feature/off-platform-subscription`).
-	3. Clean DB.
+	3. **Credit**, **accounting** service.
+	4. Clean DB.
+- Miro board for context [here]().
 - Need to review test cases ↓:
 
 # Off Platform Subscription Scenarios
@@ -19,6 +21,21 @@
 ```sql
 INSERT INTO update_tax_event(id, date_occurred, is_inclusive, name, rate, tenant_id, updated_by_user_id)
 VALUES ('f6b06b3d-e420-4379-8613-7da960e1ccf3', NOW(), false, 'Value Added Tax (VAT)', 10, 3, '0378bc66-38e6-4e93-8b9b-51f7f9d81c9b');
+```
+
+```sql
+INSERT INTO update_tax_event(id, date_occurred, is_inclusive, name, rate, tenant_id, updated_by_user_id)
+VALUES ('f6b06b3d-e420-4379-8613-7da960e1ccf3', NOW(), false, 'Value Added Tax (VAT)', 10, 3, '2910f887-010b-415b-abca-2a950651770a');
+```
+
+> Link to information and explanation for inserting [[Tax]]:
+
+For reference, here is the table structure of `update_tax-event` table.
+```bash
+whitelabel=# select * from update_tax_event ;
+ id | date_occurred | is_inclusive | name | rate | tenant_id | updated_by_user_id 
+----+---------------+--------------+------+------+-----------+--------------------
+(0 rows)
 ```
 
 # Migration Process
@@ -36,6 +53,20 @@ INSERT INTO pre_charged_subscription VALUES (nextval('pre_charged_subscription_s
 INSERT INTO pre_charged_subscription VALUES (nextval('pre_charged_subscription_sequence'),1,4,'PENDING');
 INSERT INTO pre_charged_subscription VALUES (nextval('pre_charged_subscription_sequence'),1,5,'PENDING');
 ```
+
+For reference, here is the table structure of `pre_charged_subsscription` table:
+
+```bash
+whitelabel_backup=# select * from pre_charged_subscription;
+ id | version | subscription_period_id | status 
+----+---------+------------------------+--------
+(0 rows)
+
+```
+
+
+>[!Sample Query]
+>`INSERT INTO pre_charged_subscription(id, version, subscription_period_id, status) VALUES (nextval('pre_charged_subscription_sequence'),0,1,'PENDING')`;
 
 ## Results after migration
 
