@@ -1,1 +1,0 @@
-Note: Allow the "Backlinks in document options"

@@ -1,4 +1,4 @@
-Here is a tutorial on how to receive an Amazon Simple Queue Service (SQS) message on LocalStack
+Here is a tutorial on how to receive an [[Amazon SQS]] message on LocalStack
 
 Install LocalStack, which is a lightweight version of the AWS cloud stack that can be run locally on your computer. You can do this using pip:
 
@@ -30,5 +30,3 @@ aws --endpoint-url=http://localhost:4576 sqs receive-message --queue-url http://
 ```
 
 This should output the message that you sent to the queue, along with some metadata about the message.
-
-[[AWShowto]]
