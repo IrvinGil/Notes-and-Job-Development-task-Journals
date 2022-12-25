@@ -75,5 +75,108 @@ You can spin up Linux, Windows instances.
 
 When connecting to the created instance, you would have to download a file provided by the aws to be able to connect the the EC2 instance and then configure the password to the instance using the the keypair that you have (either generated or created, depends on the choice you made during the creation of the instance).
 
+> For further reading about AWS EC2, this is the link to the [official documentation](https://docs.aws.amazon.com/pdfs/AWSEC2/latest/UserGuide/ec2-ug.pdf#elastic-ip-addresses-eip).
 ---
 
+# Elastic IP
+
+> Part of EC2 section.
+
+- Static IP address
+- Each instance launched in a subnet has a public IP if configured to do so. This is used to talk to the internet.
+- It also has a private IP address to talk with instances in the subnet and accross subnets.
+- When the instance is stopped and started, the public IP changes.
+
+### Use cases
+1.  Example.com —Web server — 54.12.1.10. If the IP address changes
+then you need to make constant DNS changes.
+2.  Domain Controller or Exchange servers, so that all clients
+don’t need to change their settings to contact these servers.
+3. Recovery - So if one instance fials, you can assign the elastic IP to another instance.
+---
+# NACL - Network Access Control List
+
+- Acts like a Firewall to control access to and from the subnet.
+- If you get abnormal traffic from a set of IP instances , you can
+block traffic from those IP Instances.
+- Subnet comes with a default Network ACL. This allows all incoming
+and outgoing traffic.
+- You have/can create custom network ACL's
+- Stateless — If traffic is allowed inbound, not necessary the same
+will be allowed outbound.
+
+NACL Rules are defined at a subnet level.
+![[nacl_rules_illustration.png]]
+*NACL rules illustration. (above)*
+
+> [!Note:]
+> **Inbound** refers to incomming traffic to your instance while the **outbound** refers to the outgoing traffic.
+
+![[nacl_rules_example.png]]
+*NACL rules examples. (above)*
+
+### Things to note on NACL rules
+1. If NACL rule has been found by AWS to be matched then all other rules that follows are discarded. (meaning if you refer to the image above, the `rule 100` of table 1 will be the first to be matched and then the * rule will not be read.)
+2. Rules are also checked by aws based on their numbering/name. From least -> greatest value.
+3. If you look at the 2nd table on the image above, the `rule 102` will not be read as any traffic from any source will be matched on the * rule.
+
+To navigate to NACL : Navigate to ***Network and content delivery*** on the AWS console -> click on VPc and go to VPC dashboard -> navigate to **subnets** -> click on any of the subnets and you can see the **NACL** section.
+
+![[nacl_on_aws_management_console.png]]
+
+To change the NACL, navigate down the sidemenu on the left and then find **Network ACLs**. From there you can make modification on your current and existing network ACLs.
+
+---
+# Security Groups
+
+- Is the next level of security, which is a firewall to control access to and from your instances. One thing to note is that **NACLs** are for your subnets and **Security Groups** are for your Instances.
+- For Example: Web server - Only allow traffic to port 8o and 443. Or 3389 for RDP. Port 22 for SSH. Here you can define what ports and whats IP can be allowed access to your instances.
+- Database server - Only allow traffic to port 3306 if you are hosting MySQL instances.\
+- Security Groups are defined at the EC2 layer.
+
+![[security_group_illustration.png]]
+
+Security groups are stateful — if you send a request from your instance,
+the response traffic for that request is allowed to flow in regardless of inbound security group rule. In Network ACL you have to look at the inbound and the outbound rules. But for the security groups, if you alow the inbound then the outbound will be automatically allowed. 
+
+You can specify separate rules for inbound and outbound traffic
+
+When you create a security group, it has no inbound rules.
+
+By default, a security group includes an outbound rule that allows all onbound traffic.
+
+To go to security groups on AWS, go to the EC2 dashboard and then find "Security groups" under **Network and Security** on the left sidebar menu. You can find all security groups defined in your VPC there.  
+
+---
+# Elastic Block Storage (EBS) Volumes
+
+- this a way to add additonal volumes on you instances. (Storage for EC2 instances)
+- Replicated by AWS within an AZ to provide high availability.
+- Scale up and down required.
+- Create point in time snapshots of the volume.
+- You can keep the volume and attach it to other instances.
+- EBS root volume - Set the Delete on termination flag to zero.
+- You can also encrypt EBS volumes. Can be done during the creation of the volume.
+
+### Types of EBS Volumes
+**SSD Backed Storage** - used in Transactional Workloads - Depends on input/output (IOPS) - 
+- General Purpose SSD (gp2) and 
+- Provisioned IOPS SSD (iop1)
+
+**HDD Backed Storage** - This is used basically for big data workloads. Primarily on throughput measured in MB/s.
+- Optimized HDD (st1) and 
+- Cold HDD (sc1)
+
+To work with Elasti block storage,  go to the EC2 dashboard and navigate to "Volumes" under **Elastic Block store** on the left sidebar menu of the AWS management console.
+
+![[ebs_on_aws_mangement_console.png]]
+
+You can attach the volume to an instance by clicking on the volume and the "Actions" option. Note that you can attach a volume to a running instance without having to stop and restart the instance.
+
+You can also change the size of your EBS volumes.
+
+You can also create a snapshot of your EBS volumes. EBS snapshots are a point-in-time copy of the volume. This way you can copy the snapshots of your volumes to other regions to make them available for other instances. If the volume you choose is encrypted, then the snapshot of that volume will also be encypted and the same the other case. 
+
+
+
+
