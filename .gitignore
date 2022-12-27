@@ -115,8 +115,8 @@ fabric.properties
 .idea/**/azureSettings.xml
 
 ### Obsidian ###
-# config dir
-.obsidian/
+# config dir | decission for this is that i get to keep my obsidian settings when pulling from remote repo as backup
+#.obsidian/ 
 
 ### VisualStudioCode ###
 .vscode/*

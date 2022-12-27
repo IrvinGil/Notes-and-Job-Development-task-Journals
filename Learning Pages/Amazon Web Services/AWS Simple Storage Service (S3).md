@@ -40,6 +40,9 @@ AWS check's your data and writes them to multiple locations on one availability 
 - Versioning can only be suspended after it has been enabled.
 
 In order to enable versioning of a s3 bucket: go to S3 -> select a bucket and then ->  go to "properties" options and select "edit" on bucket versioning.
+
+>[!Note]
+>Once S3 versioning is enabled, it can't be disabled again. It can only be suspended.
 
 ---
 # S3 Access Control List
