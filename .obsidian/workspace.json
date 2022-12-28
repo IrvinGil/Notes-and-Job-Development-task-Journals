@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8462cbd41434bd01",
+            "id": "fc80e587f63a80d0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning Pages/Amazon Web Services/AWS Fundamentals.md",
+                "file": "Learning Pages/Amazon Web Services/AWS DynamoDB.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,12 +21,12 @@
             }
           },
           {
-            "id": "fc80e587f63a80d0",
+            "id": "99252d9942c0433a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning Pages/Amazon Web Services/AWS DynamoDB.md",
+                "file": "Learning Pages/Amazon Web Services/AWS Security.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -92,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 278.0124969482422,
-    "collapsed": true
+    "width": 278.0124969482422
   },
   "right": {
     "id": "7ceacc7dcd30dd58",
@@ -109,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning Pages/Amazon Web Services/AWS DynamoDB.md",
+                "file": "Learning Pages/Amazon Web Services/AWS Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning Pages/Amazon Web Services/AWS DynamoDB.md",
+                "file": "Learning Pages/Amazon Web Services/AWS Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning Pages/Amazon Web Services/AWS DynamoDB.md"
+                "file": "Learning Pages/Amazon Web Services/AWS Security.md"
               }
             }
           }
@@ -171,8 +170,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fc80e587f63a80d0",
+  "active": "99252d9942c0433a",
   "lastOpenFiles": [
+    "Learning Pages/Amazon Web Services/AWS DynamoDB.md",
     "Learning Pages/Amazon Web Services/AWS Fundamentals.md",
     "Learning Pages/Amazon Web Services/AWS Simple Storage Service (S3).md",
     "Daily Notes and Journals/Dec 14-16, 2022.md",
@@ -181,7 +181,6 @@
     "Untitled.md",
     "Daily Notes and Journals/Database Migration.md",
     "Flyway migrate.md",
-    "README.md",
-    "Remove Invoice Notification Job For Rise/Receiving AWS SQS event in local stack.md"
+    "README.md"
   ]
 }
