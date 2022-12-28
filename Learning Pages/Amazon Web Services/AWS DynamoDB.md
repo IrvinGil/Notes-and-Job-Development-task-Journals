@@ -82,3 +82,95 @@ Is the number of 1 KB writes per second. There is a charge for the Write capacit
 Let's say you provide a write capacity of 5. That means you have a total read capacity of 1 KB * 5 = 5 KB writes per sec.
 
 So you need to decide the capacity based on your application requirements.
+
+---
+# Query and Scan
+
+1. The scan operation returns all items in the table.
+2. The filter can be used to return items based on certain attributes.
+3. Query-This can be used to return items based on Partition key and sort keys.
+
+---
+# Global and Local Secondary Indexes
+
+1. Indexes can improve faster access to the table.
+2. A secondary index has a subset of attributes from a table.
+	-  Global secondary index - can have a different partition and sort key attribute from the base table.
+	- Local secondary index - needs to have the same partition key attribute, but can have a different sort key attribute from the base table.
+
+| Global Secondary Index                                                           | Local Secondary Index                                                                                    |
+|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| You need to specify a separate read and write capacity                           | It can share the same read and write capacity of the base table.                                         |
+| In Queries you can only request for attributes that are projected into the index | In Queries you can only request for attributes that are projected into the index and from the base table |
+| Queries only support eventual consistent reads                                   | Queries only support eventual and strong consistent reads                                                |
+| Can also be created after the table is created                                   | Can only be created at table creation time                                                               |
+
+---
+# Using the CLI in AWS DynamoDB
+
+1. Download the CLI from AWS - https://aws.amazon.com/cli/
+For Windows it is an MSI installer
+2. Run AWS configure from PowerShell
+3. To dump all the contents — scan operation
+AWS DynamoDB scan --table-name Student
+
+
+To get a particular item:
+```bash
+aws dynamodb get-item --table-name Student --key file://example.json
+```
+
+```json
+//json format for the key
+{
+	"ID":{"N":"1"},
+	"Name":{"S","John"}
+}
+```
+
+>[!Note:]
+>In DynamoDB all items are in json format. So when you are providing a key, you must also provide a JSON format. It is easier to write the format key on a JSON file and then parse it as a parameter in the CLI command. And it is better than actually typing it out on the CLI itself.
+
+To write a particular item:
+```bash
+aws dynamodb put-item --table-name Student --item file://example.json
+```
+
+```json
+//json format
+{
+	"ID":{"N":"3"},
+	"Name":{"S":"UserA"}
+}
+```
+Here again you have to specify the item that you want to add in JSON format.
+
+
+---
+# Conditional Writes for DynamoDB
+
+1. DynamoDB write Operations API - `PutItem`, `UpdateItem`, and `DeleteItem`. You can do these write operations on DynamoDB via CLI. View the documentation of [DynamoDB API here](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDB_API.html). 
+2. You only want the item to succeed if a condition succeeds.
+
+**Example.**
+```sql
+Product table - Partition key - ID
+ID = 3
+Name = ProductA
+Price = 2
+```
+Let's say that we only want the update statement to succeed if the price = 2.
+```bash
+aws dynamodb update-item --table-name Product --key file://schema.json --update-expression "SET Price = :newval" --condition-expression "Price = :curval" --expression-attribute-values file://example.json
+```
+
+```json
+// values inside file://example.json
+{
+	":newval":{"N":"4"},
+	":curval":{"N":"2"}
+}
+```
+
+
+
