@@ -36,4 +36,15 @@ Identity and Access Management (IAM):
 
 ### Creating IAM users
 1. Click on your profile and click on security credentials. Navigate to the "users" section on the left sidebar menu. And click the "Add user" button.
-2. 
+2. You will be asked for the Username and on what permission you will allow the created user to have on your AWS account. 
+
+IAM users can only access the AWS service that the account owner attaches the policy in. If the user has no access policy to access a certain service, that service will not be available to them.
+
+---
+# IAM Roles
+
+IAM Roles are best used for EC2 instances. So if you want an EC2 instance to securely access an S3 bucket, for example, it is preferable to create an IAM role and assign that role to an EC2 instance.
+
+When creating IAM roles, associate least privilege IAM policies that restrict access to the specific API calls the application requires. You can only attach one IAM role to an instance, but you can attach the same role to many instances.
+
+Remember, you can attach multiple policies to the role that you want to create. The policies you include in creating the role will determine the access of the instance in which the role is attached into the AWS services.

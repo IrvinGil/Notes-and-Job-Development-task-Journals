@@ -128,14 +128,13 @@ The object with prefixes above will all be stored on one partition. That's becau
 If you have a numerous number of objects, take for example it may number to millions then it is better to vary the prefixes.
 
 >[!Better Practice:]
-Better to keep the prefix variations
+>Better to keep the prefix variations
 >```bash
-111/data/1/png
-211/data/2.png
-311/data/2.png
+>111/data/1/png
+>211/data/2.png
+>311/data/2.png
 >```
 
-
 
 >[!S3 Error Codes]
 > As a developer working with applications it is important to know the error codes and responses by AWS s3. Here is the official documentation for the [AWS S3 error responses](https://docs.aws.amazon.com/AmazonS3/latest/API/ErrorResponses.html).

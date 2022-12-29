@@ -1,4 +1,4 @@
-[[taskNote]]
+[[Task Note]]
 
 contents of notification dir:
 - [x] InvoiceEmailNotificationRecord | Entity
