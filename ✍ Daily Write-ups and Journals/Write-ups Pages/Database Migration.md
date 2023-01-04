@@ -1,8 +1,6 @@
 #database
 
-> About [[Flyway migrate]] 
-
-Context about why are we using flyway and database migration on development practice is listed here.
+Context about why are we using [[Flyway migrate]] and database migration on development practice is listed here.
 
 > [!Question]
 > Why are we using flyway migrate in our development practice?
