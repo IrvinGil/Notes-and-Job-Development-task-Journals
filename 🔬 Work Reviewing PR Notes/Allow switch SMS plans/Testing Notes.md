@@ -377,3 +377,70 @@ Caused by: com.amazonaws.services.s3.model.AmazonS3Exception: The specified buck
 	... 11 more
 
 ```
+---
+Encountered new error after changing S3 bucket resource name to `synacy-develop-main-app`
+```
+2023-01-05 00:42:30,162 [paymentListenerAllocatePaymentJmsListenerContainer-1] ERROR PaymentListener.allocatePayment  - Exception raised in message listener
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'allocatePayment' threw exception; nested exception is com.synacy.whitelabel.exception.WebServiceException: Failure occured in server
+	at grails.plugin.jms.listener.adapter.PersistenceContextAwareListenerAdapter.invokeListenerMethod(PersistenceContextAwareListenerAdapter.groovy:45)
+	at grails.plugin.jms.listener.adapter.LoggingListenerAdapter.onMessage(LoggingListenerAdapter.groovy:49)
+	at grails.plugin.jms.listener.adapter.PersistenceContextAwareListenerAdapter.onMessage(PersistenceContextAwareListenerAdapter.groovy:33)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.synacy.whitelabel.exception.WebServiceException: Failure occured in server
+	at com.synacy.whitelabel.aws.AwsS3Service.$tt__uploadFile(AwsS3Service.groovy:39)
+	at com.synacy.whitelabel.aws.S3ResourceService.$tt__uploadContent(S3ResourceService.groovy:33)
+	at com.synacy.whitelabel.billing.receipt.ReceiptService.$tt__createReceipt(ReceiptService.groovy:78)
+	at com.synacy.whitelabel.billing.payment.PaymentService.$tt__allocatePayment(PaymentService.groovy:215)
+	at com.synacy.whitelabel.billing.payment.PaymentListenerService$_allocatePayment_closure1.doCall(PaymentListenerService.groovy:34)
+	at org.grails.datastore.gorm.GormStaticApi.withTransaction(GormStaticApi.groovy:815)
+	at org.grails.datastore.gorm.GormStaticApi.withTransaction(GormStaticApi.groovy:715)
+	at com.synacy.whitelabel.billing.payment.PaymentListenerService.allocatePayment(PaymentListenerService.groovy:32)
+	... 4 more
+Caused by: com.amazonaws.services.s3.model.AmazonS3Exception: The authorization header is malformed; the region 'us-east-1' is wrong; expecting 'ap-southeast-1' (Service: Amazon S3; Status Code: 400; Error Code: AuthorizationHeaderMalformed; Request ID: HJ8SPPCN0B9W50RA; S3 Extended Request ID: pswqp3wh/aPO/Ad6yLaG+FMmK2upfsQTM2S1XZb8SrXqDmU7VEsFf0c6lsSLMKHGGzgGNQAl5mg=), S3 Extended Request ID: pswqp3wh/aPO/Ad6yLaG+FMmK2upfsQTM2S1XZb8SrXqDmU7VEsFf0c6lsSLMKHGGzgGNQAl5mg=
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleErrorResponse(AmazonHttpClient.java:1640)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1304)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:1058)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:743)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:717)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:699)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$500(AmazonHttpClient.java:667)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:649)
+	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:513)
+	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:4365)
+	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:4312)
+	at com.amazonaws.services.s3.AmazonS3Client.putObject(AmazonS3Client.java:1755)
+	at com.synacy.whitelabel.aws.AwsS3Service.$tt__uploadFile(AwsS3Service.groovy:37)
+	... 11 more
+2023-01-05 00:42:30,188 [paymentListenerAllocatePaymentJmsListenerContainer-1] ERROR listener.DefaultMessageListenerContainer  - Application exception overridden by rollback exception
+org.springframework.jms.listener.adapter.ListenerExecutionFailedException: Listener method 'allocatePayment' threw exception; nested exception is com.synacy.whitelabel.exception.WebServiceException: Failure occured in server
+	at grails.plugin.jms.listener.adapter.PersistenceContextAwareListenerAdapter.invokeListenerMethod(PersistenceContextAwareListenerAdapter.groovy:45)
+	at grails.plugin.jms.listener.adapter.LoggingListenerAdapter.onMessage(LoggingListenerAdapter.groovy:49)
+	at grails.plugin.jms.listener.adapter.PersistenceContextAwareListenerAdapter.onMessage(PersistenceContextAwareListenerAdapter.groovy:33)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.synacy.whitelabel.exception.WebServiceException: Failure occured in server
+	at com.synacy.whitelabel.aws.AwsS3Service.$tt__uploadFile(AwsS3Service.groovy:39)
+	at com.synacy.whitelabel.aws.S3ResourceService.$tt__uploadContent(S3ResourceService.groovy:33)
+	at com.synacy.whitelabel.billing.receipt.ReceiptService.$tt__createReceipt(ReceiptService.groovy:78)
+	at com.synacy.whitelabel.billing.payment.PaymentService.$tt__allocatePayment(PaymentService.groovy:215)
+	at com.synacy.whitelabel.billing.payment.PaymentListenerService$_allocatePayment_closure1.doCall(PaymentListenerService.groovy:34)
+	at org.grails.datastore.gorm.GormStaticApi.withTransaction(GormStaticApi.groovy:815)
+	at org.grails.datastore.gorm.GormStaticApi.withTransaction(GormStaticApi.groovy:715)
+	at com.synacy.whitelabel.billing.payment.PaymentListenerService.allocatePayment(PaymentListenerService.groovy:32)
+	... 4 more
+Caused by: com.amazonaws.services.s3.model.AmazonS3Exception: The authorization header is malformed; the region 'us-east-1' is wrong; expecting 'ap-southeast-1' (Service: Amazon S3; Status Code: 400; Error Code: AuthorizationHeaderMalformed; Request ID: HJ8SPPCN0B9W50RA; S3 Extended Request ID: pswqp3wh/aPO/Ad6yLaG+FMmK2upfsQTM2S1XZb8SrXqDmU7VEsFf0c6lsSLMKHGGzgGNQAl5mg=), S3 Extended Request ID: pswqp3wh/aPO/Ad6yLaG+FMmK2upfsQTM2S1XZb8SrXqDmU7VEsFf0c6lsSLMKHGGzgGNQAl5mg=
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleErrorResponse(AmazonHttpClient.java:1640)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1304)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:1058)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:743)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:717)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:699)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$500(AmazonHttpClient.java:667)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:649)
+	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:513)
+	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:4365)
+	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:4312)
+	at com.amazonaws.services.s3.AmazonS3Client.putObject(AmazonS3Client.java:1755)
+	at com.synacy.whitelabel.aws.AwsS3Service.$tt__uploadFile(AwsS3Service.groovy:37)
+	... 11 more
+
+```
