@@ -11,12 +11,15 @@
             "id": "55e5ac02cd56b839",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+                "file": "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
+                "viewState": {
+                  "x": 77.62738338142138,
+                  "y": 2466.507587167614,
+                  "zoom": -1.1246514987416525,
+                  "snapToGrid": false
+                }
               }
             }
           },
@@ -91,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 278.0124969482422
+    "width": 278.0124969482422,
+    "collapsed": true
   },
   "right": {
     "id": "7ceacc7dcd30dd58",
@@ -108,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
+                "file": "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
+                "file": "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md"
+                "file": "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas"
               }
             }
           },
@@ -191,11 +195,11 @@
   },
   "active": "55e5ac02cd56b839",
   "lastOpenFiles": [
-    "Whitelabel-main app.md",
-    "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
-    "💻 Work Task Notes/Migrate Rebate from main app to accounting/Migrate Rebate to accounting service.md",
-    "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
     "Rebate.md",
+    "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
+    "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
+    "Whitelabel-main app.md",
+    "💻 Work Task Notes/Migrate Rebate from main app to accounting/Migrate Rebate to accounting service.md",
     "Business Rules.md",
     "✍ Daily Write-ups and Journals/Journal Pages/Dec 14-16, 2022.md",
     "API.md",
