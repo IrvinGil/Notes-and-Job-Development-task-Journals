@@ -40,3 +40,57 @@ Credit service when adding rebate:
 2023-01-06 02:59:59.024  INFO 7 --- [nio-9093-exec-2] s.w.c.n.NormalResponseSentEventPublisher : "Published normal request CREDITED event for 1 REBATE."
 
 ```
+
+
+# Function/Methods
+
+## RebateService
+
+### Dependencies
+- TenantService
+- CurrentUserService
+- UserService
+- TeamService
+- NotificationService
+- ValidateAndSaveService
+
+functions as service for rebate and rebateReversal
+- [x] public createRebate
+- [x] public createRebateReversal
+- [x] public fetchRebateById
+- [x] public updateSuccessfulRebateAndCreateAccountingDocument *(might not be needed)*
+- [x] public updateFailedRebate
+- [x] public fetchRebateReversalById
+- [x] public fetchPaginatedSuccessfulRebateByTeam
+- [x] public generateAdminRebateDTO
+- [ ] updateSuccessfulRebateReversalAndCreateAccoutingDocument  *(might not be needed)*
+- [ ] updateFailedRebateReversal
+- [ ] sendNotificationForSuccessfulRebate
+- [ ] isRebateAlreadyReversed
+
+### Notes
+
+1. instead of fetch filter used in the main app, we will use custom page request on for getting paginated data.
+
+### AdminRebateDTO
+>turned to `RebateDisplayDTO` in accounting service
+
+
+## RebateController
+
+- [ ] create a customPage function
+
+
+## RebateRepository
+
+Sample of custom query
+```java
+	@Query(value = "SELECT count(id) FROM Product where featured = :featured")
+	public Long count(@Param("featured") boolean featured);
+```
+
+
+
+
+
+

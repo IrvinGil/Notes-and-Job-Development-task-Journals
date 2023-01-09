@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "131e194f5145a0b5",
+        "id": "71d3f4ea7fef657f",
         "type": "tabs",
         "children": [
           {
-            "id": "7429ac442d7077be",
+            "id": "55e5ac02cd56b839",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "✍ Daily Write-ups and Journals/Journal Pages/Dec 14-16, 2022.md",
+                "file": "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -21,23 +21,22 @@
             }
           },
           {
-            "id": "89eb1dfe5cfb9637",
+            "id": "dd005ac02d3799aa",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
                 "viewState": {
-                  "x": 68.78677084882274,
-                  "y": 606.6609553531184,
-                  "zoom": -1.1246514987416527,
+                  "x": -267.06276136028254,
+                  "y": 64.81787813012193,
+                  "zoom": 0.6420151679250138,
                   "snapToGrid": false
                 }
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -87,12 +86,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 278.0124969482422,
-    "collapsed": true
+    "width": 278.0124969482422
   },
   "right": {
     "id": "7ceacc7dcd30dd58",
@@ -109,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
+                "file": "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
+                "file": "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas"
+                "file": "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md"
               }
             }
           },
@@ -190,17 +189,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "89eb1dfe5cfb9637",
+  "active": "55e5ac02cd56b839",
   "lastOpenFiles": [
-    "API.md",
-    "✍ Daily Write-ups and Journals/Journal Pages/Dec 14-16, 2022.md",
+    "Whitelabel-main app.md",
     "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
     "💻 Work Task Notes/Migrate Rebate from main app to accounting/Migrate Rebate to accounting service.md",
     "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
-    "SMS.md",
-    "✍ Daily Write-ups and Journals/Journal Pages/Sample Canvas.canvas",
+    "Rebate.md",
     "Business Rules.md",
-    "💻 Work Task Notes/Remove Invoice Notification Job For Rise/Receiving AWS SQS event in local stack.md",
-    "✍ Daily Write-ups and Journals/Write-ups Pages/Database Migration.md"
+    "✍ Daily Write-ups and Journals/Journal Pages/Dec 14-16, 2022.md",
+    "API.md",
+    "SMS.md",
+    "✍ Daily Write-ups and Journals/Journal Pages/Sample Canvas.canvas"
   ]
 }

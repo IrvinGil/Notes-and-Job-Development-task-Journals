@@ -18,10 +18,14 @@
   "showRibbon": true,
   "deleteFileOption": "trash",
   "expandedFolders": {
-    "/": []
+    "/": [
+      "✍ Daily Write-ups and Journals",
+      "✍ Daily Write-ups and Journals/Journal Pages"
+    ]
   },
   "expandedSpaces": [
     "/",
+    null,
     null
   ],
   "folderRank": {
