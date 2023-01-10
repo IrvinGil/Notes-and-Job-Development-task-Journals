@@ -11,15 +11,25 @@
             "id": "55e5ac02cd56b839",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
-                "viewState": {
-                  "x": 77.62738338142138,
-                  "y": 2466.507587167614,
-                  "zoom": -1.1246514987416525,
-                  "snapToGrid": false
-                }
+                "file": "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "16d8d41522e8f214",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           },
@@ -31,15 +41,29 @@
               "state": {
                 "file": "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
                 "viewState": {
-                  "x": -267.06276136028254,
-                  "y": 64.81787813012193,
-                  "zoom": 0.6420151679250138,
+                  "x": -730.8017742866036,
+                  "y": 2907.997809676485,
+                  "zoom": -1.4733333333333327,
                   "snapToGrid": false
                 }
               }
             }
+          },
+          {
+            "id": "ad3cb76a32ea901f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "💻 Work Task Notes/Migrate Rebate from main app to accounting/Migrate Rebate to accounting service.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -193,17 +217,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "55e5ac02cd56b839",
+  "active": "dd005ac02d3799aa",
   "lastOpenFiles": [
-    "Rebate.md",
-    "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
     "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
-    "Whitelabel-main app.md",
+    "Notifications.md",
+    "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
     "💻 Work Task Notes/Migrate Rebate from main app to accounting/Migrate Rebate to accounting service.md",
-    "Business Rules.md",
     "✍ Daily Write-ups and Journals/Journal Pages/Dec 14-16, 2022.md",
-    "API.md",
-    "SMS.md",
-    "✍ Daily Write-ups and Journals/Journal Pages/Sample Canvas.canvas"
+    "✍ Daily Write-ups and Journals/Write-ups Pages/Database Migration.md",
+    "Flyway migrate.md",
+    "Rebate.md",
+    "Whitelabel-main app.md",
+    "Business Rules.md"
   ]
 }

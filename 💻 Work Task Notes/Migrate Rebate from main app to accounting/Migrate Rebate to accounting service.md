@@ -1,4 +1,5 @@
-
+>[!Notice:]
+>A notion page related about this task has been made. [View here](https://www.notion.so/synacy-appdev/Accounting-UI-UX-discussion-fad29640a11e42b2993c598f14aad300).
 
 ### To-do:
 - [ ] Domain Models
@@ -52,7 +53,7 @@ Credit service when adding rebate:
 - UserService
 - TeamService
 - NotificationService
-- ValidateAndSaveService
+- ValidateAndSaveService | for saving data. Not totally coupled (may just be replaced by repository class)
 
 functions as service for rebate and rebateReversal
 - [x] public createRebate

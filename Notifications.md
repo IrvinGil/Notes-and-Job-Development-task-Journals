@@ -1,0 +1,1 @@
+The notification feature and functionality is on the [[Whitelabel-main app]].
