@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -55,32 +55,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📚 Learning Pages/Technical Work Learning Pages/Initializing new Queues on Microservices.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "16bb721845e3abde",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "📚 Learning Pages/Technical Work Learning Pages/Creating New Queue on Whitelabel-Local-Shared.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ccd566d2517c07d7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "📚 Learning Pages/Technical Work Learning Pages/Creating New Queue on Whitelabel-Local-Shared.md",
                 "mode": "source",
                 "backlinks": true,
@@ -89,7 +63,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -232,17 +206,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "afd35f7bfb18beef",
+  "active": "ad3cb76a32ea901f",
   "lastOpenFiles": [
+    "⛓ Linked Pages/Codding Standard.md",
+    "SNS Topic.md",
+    "Codding Standard.md",
     "📚 Learning Pages/Technical Work Learning Pages/Creating New Queue on Whitelabel-Local-Shared.md",
-    "README.md",
-    "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
     "📚 Learning Pages/Technical Work Learning Pages/Initializing new Queues on Microservices.md",
-    "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
-    "💻 Work Task Notes/Remove Invoice Notification Job For Rise/Remove Invoice Notification Job.md",
+    "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
+    "README.md",
     "💻 Work Task Notes/Migrate Rebate from main app to accounting/Migrate Rebate to accounting service.md",
-    "⛓ Linked Pages/Rebate.md",
-    "Rebate.md",
-    "Notifications.md"
+    "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
+    "💻 Work Task Notes/Remove Invoice Notification Job For Rise/Remove Invoice Notification Job.md"
   ]
 }
