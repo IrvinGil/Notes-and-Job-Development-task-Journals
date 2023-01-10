@@ -10,7 +10,7 @@ This page is about initializing a new [[Amazon SQS]] queue on the whitelabel-loc
 
 1. Open `whitelabel-local-shared` project and navigate to `scripts/localstack/queues`. Here you will see the initialization scripts for all the queues run on local-shared service.
 
-![](whitelabel-local-shared-queue-directory.png)
+![local shared queue directory](whitelabel-local-shared-queue-directory.png)
 
 3. Find the appropriate initializer script (example: if you want to create a queue that is related to accounting, then choose `local-stack-accounting-initializer.sh`). 
 
