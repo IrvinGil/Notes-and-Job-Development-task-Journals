@@ -14,4 +14,6 @@ Linked pages only work when you use the obsidian app. And in order for this to w
 
 ## Vault Structure
 
-The structure of this obsidian vault is that the pages are somehow organized in a way that they are related to each other and are grouped under their respective folders/directory. Linked pages are just kept above those folders for easy access and to identify them as linked pages.
+The structure of this obsidian vault is that the pages are somehow organized in a way that they are related to each other and are grouped under their respective folders/directory. ~~Linked pages are just kept above those folders for easy access and to identify them as linked pages.~~ (deprecated: 01-10-2023)
+
+Linked pages are stored on the **⛓ Linked Pages** folder.

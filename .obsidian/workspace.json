@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
+                "file": "💻 Work Task Notes/Remove Invoice Notification Job For Rise/Remove Invoice Notification Job.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
+                "file": "README.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -41,9 +41,9 @@
               "state": {
                 "file": "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
                 "viewState": {
-                  "x": -730.8017742866036,
-                  "y": 2907.997809676485,
-                  "zoom": -1.4733333333333327,
+                  "x": 357.4231668900293,
+                  "y": 2793.9162561623025,
+                  "zoom": -0.5899999999999993,
                   "snapToGrid": false
                 }
               }
@@ -55,7 +55,33 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻 Work Task Notes/Migrate Rebate from main app to accounting/Migrate Rebate to accounting service.md",
+                "file": "📚 Learning Pages/Technical Work Learning Pages/Initializing new Queues on Microservices.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "16bb721845e3abde",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📚 Learning Pages/Technical Work Learning Pages/Creating New Queue on Whitelabel-Local-Shared.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ccd566d2517c07d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "📚 Learning Pages/Technical Work Learning Pages/Creating New Queue on Whitelabel-Local-Shared.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -63,7 +89,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -106,20 +132,18 @@
             }
           },
           {
-            "id": "02d87779d4f841cb",
+            "id": "75ed2546574da26f",
             "type": "leaf",
             "state": {
               "type": "mk-file-view",
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 278.0124969482422,
-    "collapsed": true
+    "width": 278.0124969482422
   },
   "right": {
     "id": "7ceacc7dcd30dd58",
@@ -136,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
+                "file": "📚 Learning Pages/Technical Work Learning Pages/Creating New Queue on Whitelabel-Local-Shared.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
+                "file": "📚 Learning Pages/Technical Work Learning Pages/Creating New Queue on Whitelabel-Local-Shared.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,20 +189,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas"
+                "file": "📚 Learning Pages/Technical Work Learning Pages/Creating New Queue on Whitelabel-Local-Shared.md"
               }
-            }
-          },
-          {
-            "id": "2feb0d02c9bce9a4",
-            "type": "leaf",
-            "state": {
-              "type": "make-context-view",
-              "state": {}
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       },
       {
         "id": "103cbfae1509b92b",
@@ -204,8 +220,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,17 +232,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dd005ac02d3799aa",
+  "active": "afd35f7bfb18beef",
   "lastOpenFiles": [
+    "📚 Learning Pages/Technical Work Learning Pages/Creating New Queue on Whitelabel-Local-Shared.md",
+    "README.md",
     "✍ Daily Write-ups and Journals/Journal Pages/Jan 4 - 13, 2023.md",
-    "Notifications.md",
+    "📚 Learning Pages/Technical Work Learning Pages/Initializing new Queues on Microservices.md",
     "💻 Work Task Notes/Migrate Rebate from main app to accounting/Planning Diagram.canvas",
+    "💻 Work Task Notes/Remove Invoice Notification Job For Rise/Remove Invoice Notification Job.md",
     "💻 Work Task Notes/Migrate Rebate from main app to accounting/Migrate Rebate to accounting service.md",
-    "✍ Daily Write-ups and Journals/Journal Pages/Dec 14-16, 2022.md",
-    "✍ Daily Write-ups and Journals/Write-ups Pages/Database Migration.md",
-    "Flyway migrate.md",
+    "⛓ Linked Pages/Rebate.md",
     "Rebate.md",
-    "Whitelabel-main app.md",
-    "Business Rules.md"
+    "Notifications.md"
   ]
 }

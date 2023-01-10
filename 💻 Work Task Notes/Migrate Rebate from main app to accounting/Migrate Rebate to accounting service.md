@@ -4,9 +4,9 @@
 ### To-do:
 - [ ] Domain Models
 	- [ ] `Rebate`
-	- [ ] `RebateAccountingDocument`
+	- [x] `RebateAccountingDocument` (not necessary for accounting service)
 	- [ ] `RebateReversal`
-	- [ ] `RebateReversalAccountingDocument`
+	- [x] `RebateReversalAccountingDocument` (not necessary for accounting service)
 - [ ] Controller
 	- [ ] `RebateController`
 - [ ] Service
@@ -14,6 +14,7 @@
 	- [ ] `RebateListenerService`
 	- [ ] `RebateReversalListenerService`
 - [ ] DTO
+- [ ] Rebate SQS (make a queue for the rebate | not jmsqueue)
 - [ ] Unit Test
 
 
